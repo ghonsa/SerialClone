@@ -1,0 +1,4 @@
+LIBRARY  SerialCloneCoInst
+
+EXPORTS
+   SerialCloneCoInstaller

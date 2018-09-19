@@ -1,0 +1,25 @@
+;Codewright Project File (do not remove or modify this line)
+
+[State]
+
+
+[Editor]
+ClipboardSetTermStr='\r\n',0
+ClipboardEnableTermStr=1
+ClipboardSetSepStr='\r\n',0
+ClipboardEnableSepStr=1
+ScrapSetCount=1
+
+[Compiler]
+CompilerNewExt=.htm
+CompilerNewExt=.000
+CompilerNewExt=.pas
+CompilerNewExt=.ini
+CompilerNewExt=.html
+CompilerAssign='Default Compiler Settings','.*'
+CompilerNewExt=.txt
+TagSetCmd='${HOME}${WTAGS} -oc -d -t${TAGFILE}.tag -p${TAGFILE}.ptg',0x8000060
+BrowseSetFile='C:\work\SerialClone\coinst\CoInst.ptg'
+TagSetFile='C:\work\SerialClone\coinst\CoInst.tag'
+CompilerAddCmd='Default Compiler Settings','',1073741840,'',16,'',16,'',16,'',0,'',0,'','','','',''
+CompilerAddResponse='Default Compiler Settings',

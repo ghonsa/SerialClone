@@ -1,0 +1,178 @@
+;
+; File Name: SerialClone.inf
+; Install file for SerialClone Driver
+;
+; Greg Honsa
+; Honsa Consulting
+; 10/4/2005
+;
+
+;--------- Version Info--------
+
+[Version]
+Signature="$WINDOWS NT$"
+
+Class=Ports
+ClassGUID={4d36e978-e325-11ce-bfc1-08002be10318}
+
+Provider=%Provider%
+DriverVer=10/04/2005,1.00.0000
+CatalogFile=serialclone.cat
+; Copyright 2005 by Honsa Consulting
+
+;--------- Destination Directories ----------
+
+[DestinationDirs]
+DefaultDestDir = 10
+SerialClone_Files_Driver = 12
+CoInstaller_CopyFiles = 11 ; windows\system32
+
+
+;--------- SourceDiskNames and SourceDiskFiles Section -----------------------
+; These sections identify source disks and files for installation.
+
+[SourceDisksNames]
+1 = %DiskId1%,,,""
+
+[SourceDisksFiles]
+SerialClone.sys  = 1,,
+SerialCloneCoInst.dll = 1
+
+;--------- Manufacturer and Models Sections ----------------------------------
+
+[Manufacturer]
+%MfgName%=SerialClone_Mfg  
+
+[SerialClone_Mfg]
+; DisplayName               Section           DeviceId
+%SerialClone_DeviceDesc%=SerialClone_DDI, *SerialCloneDevice
+;%Clone_DeviceDesc%=CloneInstall,*WCO1104/*
+
+
+;---------- DDInstall Sections -----------------------------------------------
+; --------- Windows 98 -----------------
+
+; Experimentation has shown that DDInstall root names greater than 19 characters
+; cause problems in Windows 98
+
+[SerialClone_DDI]
+CopyFiles=SerialClone_Files_Driver
+AddReg=SerialClone_9X_AddReg
+
+[SerialClone_9X_AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,SerialClone.sys
+HKR,,Description,,%SerialClone_DeviceDesc%
+
+; --------- Windows NT -----------------
+
+[SerialClone_DDI.NT]
+CopyFiles=SerialClone_Files_Driver
+AddReg=SerialClone_NT_AddReg
+
+[SerialClone_DDI.NT.HW]
+AddReg=SerialClone_NT_HW_AddReg
+
+[SerialClone_DDI.NT.Services]
+Addservice = SerialClone, 0x00000002, SerialClone_Service
+
+; --------- Coinstaller installation -----------------
+
+[SerialClone_DDI.NT.CoInstallers]
+AddReg=CoInstaller_AddReg
+CopyFiles=CoInstaller_CopyFiles
+
+[CoInstaller_CopyFiles]
+SerialCloneCoInst.dll
+
+[CoInstaller_AddReg]
+; We are using our own custom device coinstaller DLL
+HKR,,CoInstallers32,%REG_MULTI_SZ%,"SerialCloneCoInst.dll,SerialCloneCoInstaller"
+HKLM, System\CurrentControlSet\Control\Class\{4d36e978-e325-11ce-bfc1-08002be10318}\0000,CoInstallers32,%REG_MULTI_SZ%,"SerialCloneCoInst.dll,SerialCloneCoInstaller"
+
+; --------- Registry ----------------------
+[SerialClone_NT_AddReg]
+HKLM, System\CurrentControlSet\Control\Class\{4d36e978-e325-11ce-bfc1-08002be10318}\0000,UpperFilters, 0x00010008, "SerialClone"
+;HKLM,System\CurrentControlSet\Enum\ACPI\PNP0501\1, UpperFilters, 0x00010008, SerialClone
+
+[SerialClone_NT_HW_AddReg]
+;reg-root,[subkey],[value-entry-name],[flags],[value]
+HKR,,CloneEnable,%REG_DWORD%,0
+; --------- Service ----------------------
+
+[SerialClone_Service]
+DisplayName    = %SerialClone_SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\SerialClone.sys
+LoadOrderGroup = Extended Base
+
+
+[CloneInstall_DDI]
+Addservice = Clone, 0x00000002, Clone_Service
+
+[CloneInstall.DDI.NT]
+
+[Clone_DDI.NT.Services]
+Addservice = Clone, 0x00000002, Clone_Service
+
+
+[Clone_Service]
+DisplayName    = "Clone"
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\test1.sys
+LoadOrderGroup = Extended Base
+
+
+
+; --------- Files ----------------------
+
+[SerialClone_Files_Driver]
+SerialClone.sys,,,2
+
+;--------- Strings Section ---------------------------------------------------
+
+[Strings]
+Provider = "Honsa Consulting"
+MfgName = "Honsa Consulting"
+SerialClone_DeviceDesc = "SerialCloneDevice"
+Clone_DeviceDesc = "CloneDevice"
+DeviceClassName="Class for SerialClonedevices"
+SerialClone_SvcDesc = "Driver for SerialCloneDevice"
+DiskId1 = "SerialCloneDevice Installation Disk #1"
+
+REG_SZ                      = 0x00000000
+REG_MULTI_SZ                = 0x00010000
+REG_EXPAND_SZ               = 0x00020000
+REG_BINARY                  = 0x00000001
+REG_DWORD                   = 0x00010001
+REG_NONE                    = 0x00020001
+
+SERVICE_KERNEL_DRIVER       = 0x00000001
+SERVICE_FILE_SYSTEM_DRIVER  = 0x00000002
+SERVICE_ADAPTER             = 0x00000004
+SERVICE_RECOGNIZER_DRIVER   = 0x00000008
+
+SERVICE_BOOT_START          = 0x0
+SERVICE_SYSTEM_START        = 0x1
+SERVICE_AUTO_START          = 0x2
+SERVICE_DEMAND_START        = 0x3
+SERVICE_DISABLED            = 0x4
+
+SERVICE_ERROR_IGNORE        = 0x00000000
+SERVICE_ERROR_NORMAL        = 0x00000001
+SERVICE_ERROR_SEVERE        = 0x00000002
+SERVICE_ERROR_CRITICAL      = 0x00000003
+
+FLG_ADDREG_NOCLOBBER        = 0x00000002
+FLG_ADDREG_DELVAL           = 0x00000004
+FLG_ADDREG_APPEND           = 0x00000008
+FLG_ADDREG_KEYONLY          = 0x00000010
+FLG_ADDREG_OVERWRITEONLY    = 0x00000020
+FLG_ADDREG_64BITKEY         = 0x00001000
+FLG_ADDREG_KEYONLY_COMMON   = 0x00002000
+FLG_ADDREG_32BITKEY         = 0x00004000
+

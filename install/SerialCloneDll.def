@@ -1,0 +1,7 @@
+LIBRARY SerialCloneDll
+
+EXPORTS
+   Install
+   Uninstall
+   CoInstall
+

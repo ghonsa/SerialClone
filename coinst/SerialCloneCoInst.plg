@@ -1,0 +1,147 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SerialCloneCoInst - Win32 Checked--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"objchk\i386/SerialCloneCoInst.res" /d "_DEBUG" "C:\work\SerialClone\coinst\SerialCloneCoInst.rc"" 
+Creating temporary file "C:\DOCUME~1\HP_Owner\LOCALS~1\Temp\RSP393.tmp" with contents
+[
+/nologo /Gz /MTd /W3 /Gm /GX /Zi /Od /I "C:\WINDDK\2600~1.110\inc\wxp" /I "C:\WINDDK\2600~1.110\inc\crt" /I "C:\WINDDK\2600~1.110\inc\crt\atl30" /D "_UNICODE" /D "UNICODE" /D _X86_=1 /D i386=1 /D "STD_CALL" /D CONDITION_HANDLING=1 /D NT_INST=0 /D WIN32=100 /D _NT1X_=100 /D WINNT=1 /D WIN32_LEAN_AND_MEAN=1 /D DEVL=1 /D FPO=0 /D "NDEBUG" /D DBG=1 /D "DEPRECATE_DDK_FUNCTIONS" /D _WIN32_WINNT=0x0501 /D WINVER=0x0501 /D _WIN32_IE=0x0603 /D NTDDI_VERSION=0x05010000 /FR"objchk\i386/" /Fp"objchk\i386/SerialCloneCoInst.pch" /YX /Fo"objchk\i386/" /Fd"objchk\i386/SerialCloneCoInst.pdb" /FD /c 
+"C:\work\SerialClone\coinst\SCDevEnum.cpp"
+"C:\work\SerialClone\coinst\SerialCloneCoInst.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\HP_Owner\LOCALS~1\Temp\RSP393.tmp" 
+Creating temporary file "C:\DOCUME~1\HP_Owner\LOCALS~1\Temp\RSP394.tmp" with contents
+[
+setupapi.lib kernel32.lib user32.lib libcmtd.lib advapi32.lib comctl32.lib ole32.lib oleaut32.lib uuid.lib ntdll.lib /nologo /dll /incremental:yes /pdb:"objchk\i386/SerialCloneCoInst.pdb" /map:"objchk\i386/SerialCloneCoInst.map" /debug /machine:I386 /nodefaultlib /def:"SerialCloneCoInst.def" /out:"objchk\i386/SerialCloneCoInst.dll" /implib:"objchk\i386/SerialCloneCoInst.lib" /libpath:"C:\WINDDK\2600~1.110\lib\wxp\i386" /libpath:"C:\WINDDK\2600~1.110\lib\wxp\i386" /ignore:4010,4037,4039,4065,4070,4078,4087,4089,4221,4210 
+.\objchk\i386\SCDevEnum.obj
+.\objchk\i386\SerialCloneCoInst.obj
+.\objchk\i386\SerialCloneCoInst.res
+]
+Creating command line "link.exe @C:\DOCUME~1\HP_Owner\LOCALS~1\Temp\RSP394.tmp"
+<h3>Output Window</h3>
+Compiling resources with DDK resource compiler...
+Compiling with DDK compiler...
+SCDevEnum.cpp
+C:\work\SerialClone\coinst\SCDevEnum.cpp(509) : warning C4101: 'argIndex' : unreferenced local variable
+C:\work\SerialClone\coinst\SCDevEnum.cpp(507) : warning C4101: 'err' : unreferenced local variable
+C:\work\SerialClone\coinst\SCDevEnum.cpp(597) : warning C4101: 'pBuff' : unreferenced local variable
+SerialCloneCoInst.cpp
+C:\work\SerialClone\coinst\SerialCloneCoInst.cpp(117) : warning C4101: 'FriendlyName' : unreferenced local variable
+C:\work\SerialClone\coinst\SerialCloneCoInst.cpp(118) : warning C4101: 'dwRegType' : unreferenced local variable
+C:\work\SerialClone\coinst\SerialCloneCoInst.cpp(119) : warning C4101: 'hComPort' : unreferenced local variable
+C:\work\SerialClone\coinst\SerialCloneCoInst.cpp(120) : warning C4101: 'CommDeviceData' : unreferenced local variable
+C:\work\SerialClone\coinst\SerialCloneCoInst.cpp(118) : warning C4101: 'dwBuffSz' : unreferenced local variable
+Linking with DDK linker...
+   Creating library objchk\i386/SerialCloneCoInst.lib and object objchk\i386/SerialCloneCoInst.exp
+libcmtd.lib(tzset.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(timeset.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(strftime.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(days.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(wcsnicmp.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(wcslen.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(wcsicmp.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(wcschr.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(wcscat.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(woutput.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(vswprint.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(vsnprint.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(sprintf.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(snprintf.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(output.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(fflush.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(fclose.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(closeall.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(_getbuf.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(_freebuf.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(_flswbuf.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(_flsbuf.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(_file.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(fputwc.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(tidtable.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(stdenvp.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(stdargv.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(mlock.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(dllmain.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(dllcrt0.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(crt0msg.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(crt0init.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(crt0fp.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(crt0dat.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(wtombenv.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(winxfltr.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(winsig.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(w_str.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(w_map.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(w_loc.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(setlocal.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(setenv.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(nlsdata3.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(nlsdata2.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(nlsdata1.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(lconv.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(inittime.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(initnum.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(initmon.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(inithelp.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(initctyp.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(initcoll.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(getqloc.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(getenv.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(dbgrpt.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(dbgdel.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(dbghook.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(dbgheap.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(ctype.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(crtmbox.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(cmiscdat.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(a_str.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(a_map.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(a_loc.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(a_env.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(a_cmp.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(mbsnbico.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(mbschr.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(mbctype.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(write.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(osfinfo.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(lseek.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(isatty.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(ioinit.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(commit.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(close.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(new.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(_newmode.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(handler.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(sbheap.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(realloc.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(malloc.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(heapinit.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(heapchk.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(free.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(expand.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(dosmap.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(xtoa.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(wctomb.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(towupper.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(towlower.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(tolower.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(mbtowc.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(iswctype.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(isctype.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(atox.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+libcmtd.lib(_wctype.obj) : warning LNK4099: PDB 'libcmtd.pdb' was not found with 'C:\WINDDK\2600~1.110\lib\wxp\i386\libcmtd.lib' or at 'C:\work\SerialClone\coinst\objchk\i386\libcmtd.pdb'; linking object as if no debug info
+Creating command line "bscmake.exe /nologo /o"objchk\i386/SerialCloneCoInst.bsc"  .\objchk\i386\SCDevEnum.sbr .\objchk\i386\SerialCloneCoInst.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SerialCloneCoInst.dll - 0 error(s), 105 warning(s)
+</pre>
+</body>
+</html>

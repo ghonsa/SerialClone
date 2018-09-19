@@ -1,0 +1,11 @@
+[Batch Build]
+SerialClone - Win32 Checked=1
+SerialClone - Win32 Free=1
+SerialCloneDll - Win32 Checked=1
+SerialCloneDll - Win32 Free=1
+SCInstall - Win32 Debug=1
+SCInstall - Win32 Release=1
+SerialCloneApp - Win32 Checked=1
+SerialCloneApp - Win32 Free=1
+SerialCloneCoInst - Win32 Checked=1
+SerialCloneCoInst - Win32 Free=1

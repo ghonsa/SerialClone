@@ -1,0 +1,55 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SerialClone - Win32 Checked--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo".\objchk\i386/SerialClone.res" /i "C:\WINDDK\2600~1.110\inc\crt" /d "_DEBUG" "C:\work\SerialClone\Driver\SerialClone.rc"" 
+Creating temporary file "C:\DOCUME~1\HP_Owner\LOCALS~1\Temp\RSP17.tmp" with contents
+[
+/nologo /Gz /ML /W3 /Zi /Od /Gy /I "C:\WINDDK\2600~1.110\inc\wxp" /I "C:\WINDDK\2600~1.110\inc\crt" /I "C:\WINDDK\2600~1.110\inc\ddk\wxp" /I "C:\WINDDK\2600~1.110\inc\ddk\wdm\wxp" /FI"warning.h" /D _X86_=1 /D i386=1 /D "STD_CALL" /D CONDITION_HANDLING=1 /D NT_INST=0 /D WIN32=100 /D _NT1X_=100 /D WINNT=1 /D WIN32_LEAN_AND_MEAN=1 /D DEVL=1 /D FPO=0 /D "NDEBUG" /D _DLL=1 /D DBG=1 /D "DEPRECATE_DDK_FUNCTIONS" /D _WIN32_WINNT=0x0501 /D WINVER=0x0501 /D _WIN32_IE=0x0603 /D NTDDI_VERSION=0x05010000 /FR".\objchk\i386/" /Fo".\objchk\i386/" /Fd".\objchk\i386\SerialClone.pdb" /Zel -cbstring /GF /c 
+"C:\work\SerialClone\Driver\clone.c"
+"C:\work\SerialClone\Driver\debug.c"
+"C:\work\SerialClone\Driver\Filter.c"
+"C:\work\SerialClone\Driver\registry.c"
+"C:\work\SerialClone\Driver\SerialClone.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\HP_Owner\LOCALS~1\Temp\RSP17.tmp" 
+Creating temporary file "C:\DOCUME~1\HP_Owner\LOCALS~1\Temp\RSP18.tmp" with contents
+[
+ntoskrnl.lib hal.lib ntstrsafe.lib /nologo /base:"0x10000" /version:5.0 /stack:0x40000,0x1000 /entry:"DriverEntry" /incremental:no /pdb:".\objchk\i386/SerialClone.pdb" /map:"SerialClone.map.map" /debug /machine:IX86 /nodefaultlib /out:".\objchk\i386\SerialClone.sys" /libpath:"C:\WINDDK\2600~1.110\lib\wxp\i386" /driver /MERGE:_PAGE=PAGE /MERGE:_TEXT=.text /SECTION:INIT,d /MERGE:.rdata=.text /FULLBUILD /RELEASE /OPT:REF /OPT:ICF /align:0x80 /osversion:5.00 /subsystem:native,1.10 /ignore:4010,4037,4039,4065,4070,4078,4087,4089,4099,4221,4210 
+.\objchk\i386\clone.obj
+.\objchk\i386\debug.obj
+.\objchk\i386\Filter.obj
+.\objchk\i386\registry.obj
+.\objchk\i386\SerialClone.obj
+.\objchk\i386\SerialClone.res
+]
+Creating command line "link.exe @C:\DOCUME~1\HP_Owner\LOCALS~1\Temp\RSP18.tmp"
+Creating temporary file "C:\DOCUME~1\HP_Owner\LOCALS~1\Temp\RSP19.bat" with contents
+[
+@echo off
+C:\PROGRA~1\Compuware\SOFTIC~1\DriverWorks\bin\nmsym /trans:source,package,always .\objchk\i386\SerialClone.sys
+]
+Creating command line "C:\DOCUME~1\HP_Owner\LOCALS~1\Temp\RSP19.bat"
+Compiling resources with DDK resource compiler...
+Compiling with DDK compiler...
+clone.c
+debug.c
+Filter.c
+registry.c
+SerialClone.c
+Generating Code...
+Linking with DDK linker...
+<h3>Output Window</h3>
+---------------------------Build SoftICE Symbols----------------------------
+
+Compuware NM32 Symbol Translator/Loader version 4.3.2
+(C) Compuware Corporation, 1996-2004
+
+MODULE=.\objchk\i386\SerialClone.sys
+PROMPT=OFF
+Translation of C:\work\SerialClone\Driver\objchk\i386\SerialClone.sys successfully completed
+Creatin

@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Installer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/devcon.res" /d "_DEBUG" "C:\work\SerialClone\Installer\devcon.rc"" 
+Creating temporary file "C:\DOCUME~1\HP_Owner\LOCALS~1\Temp\RSP1F.tmp" with contents
+[
+/nologo /MTd /W3 /ZI /Od /X /I "c:\winddk\2600.1106\inc\wxp" /I "C:\WINDDK\2600~1.110\inc\wxp" /I "C:\WINDDK\2600~1.110\inc\crt" /u /D "_CONSOLE" /D "_MBCS" /D "WIN32" /D "_DEBUG _UNICODE" /D "UNICODE" /D _X86_=1 /D i386=1 /D "STD_CALL" /D CONDITION_HANDLING=1 /D NT_INST=0 /D WIN32=100 /D _NT1X_=100 /D WINNT=1 /D WIN32_LEAN_AND_MEAN=1 /D DEVL=1 /D FPO=0 /D "NDEBUG" /D DBG=1 /D "DEPRECATE_DDK_FUNCTIONS" /D _WIN32_WINNT=0x0501 /D WINVER=0x0501 /D _WIN32_IE=0x0603 /D NTDDI_VERSION=0x05010000 /FR"Debug/" /Fp"Debug/Installer.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\work\SerialClone\Installer\cmds.cpp"
+"C:\work\SerialClone\Installer\devcon.cpp"
+"C:\work\SerialClone\Installer\dump.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\HP_Owner\LOCALS~1\Temp\RSP1F.tmp" 
+Creating temporary file "C:\DOCUME~1\HP_Owner\LOCALS~1\Temp\RSP20.tmp" with contents
+[
+gdi32.lib winspool.lib comdlg32.lib shell32.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib advapi32.lib ole32.lib oleaut32.lib uuid.lib /nologo /subsystem:console /incremental:no /pdb:"Debug/Installer.pdb" /map:"Debug/Installer.map" /machine:I386 /out:"objchk_wxp_x86/i386/Installer.exe" /pdbtype:sept 
+.\Debug\cmds.obj
+.\Debug\devcon.obj
+.\Debug\dump.obj
+.\Debug\devcon.res
+]
+Creating command line "link.exe @C:\DOCUME~1\HP_Owner\LOCALS~1\Temp\RSP20.tmp"
+<h3>Output Window</h3>
+Compiling resources with DDK resource compiler...
+Compiling with DDK compiler...
+cmds.cpp
+c:\WINDDK\2600.1106\inc\crt\excpt.h(23) : fatal error C1189: #error :  ERROR: Only Win32 target supported!
+devcon.cpp
+c:\WINDDK\2600.1106\inc\crt\excpt.h(23) : fatal error C1189: #error :  ERROR: Only Win32 target supported!
+dump.cpp
+c:\WINDDK\2600.1106\inc\crt\excpt.h(23) : fatal error C1189: #error :  ERROR: Only Win32 target supported!
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+Installer.exe - 3 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

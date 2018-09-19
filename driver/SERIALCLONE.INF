@@ -1,0 +1,83 @@
+; This INF file and the accompanying readme demonstrate how to programmatically install a class filter driver.
+; See the comments inline below for items that need to be modified when using this sample. The accompanying 
+; readme discusses using this INF file to install the class filter driver.
+;
+; Copyright Microsoft Corporation
+
+[Version]
+signature="$CHICAGO$"
+Provider=%MFGNAME% 
+
+; Distribution Media information
+;
+[SourceDisksNames]
+1 = %SerialClone.MediaDesc%
+
+[SourceDisksFiles]
+SerialClone.sys = 1
+
+
+[DestinationDirs]
+;
+; Driver to be installed in the drivers subdirectory.
+;
+DefaultDestDir = 10,system32\drivers        	; DIRID_DRIVERS
+
+[DefaultInstall.NT]
+;
+; DefaultInstall section is used to install the class filter driver. Use .NT platform extension so this
+; section won't be executed on Windows 9x/ME.
+;
+CopyFiles = SerialClone.sys,,,0x60
+AddReg = SerialClone_AddReg
+ 
+[SerialClone_AddReg]
+;
+; Change {setup-ClassGUID} to the string form of the ClassGUID that you are installing the filter on.
+;
+; Change UpperFilters to LowerFilters if this is a lower class filter.
+;
+HKLM, System\CurrentControlSet\Enum\ACPI\PNP0501\1, UpperFilters, 0x00010008, SerialClone
+
+
+[DefaultInstall.NT.Services]
+;
+; Services section is required for installation of drivers on NT-based operating systems.
+;
+AddService = SerialClone, , SerialClone_Service_Inst, SerialClone_EventLog_Inst
+
+[SerialClone_Service_Inst]
+DisplayName    = %SerialClone.SvcDesc%
+ServiceType    = 1
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_IGNORE%
+ServiceBinary  = %10%\system32\drivers\SerialClone.sys		;change clasfilt.sys to the name of your driver binary.
+
+
+[SerialClone_EventLog_Inst]
+AddReg = SerialClone_EventLog_AddReg
+
+
+[SerialClone_EventLog_AddReg]
+;Change clasfilt.sys to the name of your driver file.
+HKR,,EventMessageFile, %REG_EXPAND_SZ%,"%%SystemRoot%%\System32\IoLogMsg.dll;%%SystemRoot%%\System32\drivers\SerialClone.sys"
+HKR,,TypesSupported, %REG_DWORD%, 7
+
+
+[Strings]
+;
+; Change the service description to describe your driver.
+;
+SerialClone.SvcDesc	= "Upper Serial Class Filter Driver"
+
+; Change the media description to describe your media.
+;
+SerialClone.MediaDesc 	= "Serial Class Filter Driver Disc"
+MFGNAME="Honsa Consulting"
+
+; Useful constants
+SERVICE_KERNEL_DRIVER = 1
+SERVICE_DEMAND_START  = 3
+SERVICE_ERROR_IGNORE  = 0
+REG_EXPAND_SZ         = 0x00020000
+REG_DWORD             = 0x00010001

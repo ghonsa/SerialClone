@@ -1,0 +1,49 @@
+;Codewright Project File (do not remove or modify this line)
+[ProjInit]
+ProjSetConfigFlags=0x00010140
+ProjCheckPath='C:\work\SerialClone\coinst\\'
+
+[Files]
+C:\WORK\SERIALCLONE\COINST\makefile
+C:\WORK\SERIALCLONE\COINST\resource.h
+C:\WORK\SERIALCLONE\COINST\SerialCloneCoInst.aps
+C:\WORK\SERIALCLONE\COINST\SerialCloneCoInst.cpp
+C:\WORK\SERIALCLONE\COINST\SerialCloneCoInst.def
+C:\WORK\SERIALCLONE\COINST\SerialCloneCoInst.dsp
+C:\WORK\SERIALCLONE\COINST\SerialCloneCoInst.dsw
+C:\WORK\SERIALCLONE\COINST\SerialCloneCoInst.ncb
+C:\WORK\SERIALCLONE\COINST\SerialCloneCoInst.opt
+C:\WORK\SERIALCLONE\COINST\SerialCloneCoInst.rc
+C:\WORK\SERIALCLONE\COINST\sources
+
+
+[State]
+SysSetCwd='C:\work\SerialClone\app'
+SrchSetFlags=0x0419600a
+FileSortMode=0x0
+StateWindowFrame=19,13,1237,907,0x63097fc8
+_StateHistory=FILELIST,'C:\WORK\SERIALCLONE\COINST\SerialCloneCoInst.rc','C:\WORK\SERIALCLONE\COINST\SerialCloneCoInst.def','C:\WORK\SERIALCLONE\COINST\makefile','C:\WORK\SERIALCLONE\COINST\sources','C:\WORK\SERIALCLONE\COINST\SerialCloneCoInst.ncb','C:\WORK\SERIALCLONE\COINST\SerialCloneCoInst.aps','C:\WORK\SERIALCLONE\COINST\SerialCloneCoInst.dsw','C:\WORK\SERIALCLONE\COINST\SerialCloneCoInst.dsp','C:\WORK\SERIALCLONE\COINST\SerialCloneCoInst.opt'
+_StateHistory=SEARCH,'TEST6_PROP_PARAMS','test6'
+_StateHistory=REPLACE,'SERIALCLONE_PROP_PARAMS','SerialClone'
+_StateHistory=XSYMBOL,'test6OpenDevice','test6AddPropertyPage','test6PropPageDlgProc','SerialCloneAddPropertyPage','SerialClonePropPageDlgCallback'
+
+[Editor]
+ClipboardSetTermStr='\r\n',0
+ClipboardEnableTermStr=1
+ClipboardSetSepStr='\r\n',0
+ClipboardEnableSepStr=1
+ScrapSetCount=1
+
+[Compiler]
+TagSetFile=''
+BrowseSetFile=''
+CompilerNewExt=.htm
+CompilerNewExt=.000
+CompilerNewExt=.pas
+CompilerNewExt=.ini
+CompilerNewExt=.html
+CompilerAssign='Default Compiler Settings','.*'
+CompilerNewExt=.txt
+TagSetCmd='${HOME}${WTAGS} -oc -d -t${TAGFILE}.tag -p${TAGFILE}.ptg',0x8000060
+CompilerAddCmd='Default Compiler Settings','',16,'',16,'',16,'',16,'',0,'',0,'','','','',''
+CompilerAddResponse='Default Compiler Settings',

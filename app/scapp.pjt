@@ -1,0 +1,51 @@
+;Codewright Project File (do not remove or modify this line)
+[ProjInit]
+ProjSetConfigFlags=0x00010140
+ProjCheckPath='C:\work\SerialClone\app\\'
+
+[Files]
+C:\WORK\SERIALCLONE\APP\makefile
+C:\WORK\SERIALCLONE\APP\resource.h
+C:\WORK\SERIALCLONE\APP\SerialCloneApp.cpp
+C:\WORK\SERIALCLONE\APP\SerialCloneApp.dsp
+C:\WORK\SERIALCLONE\APP\SerialCloneApp.h
+C:\WORK\SERIALCLONE\APP\SerialCloneApp.rc
+C:\WORK\SERIALCLONE\APP\SerialCloneIorw.cpp
+C:\WORK\SERIALCLONE\APP\sources
+
+
+[State]
+SysSetCwd='C:\work\SerialClone\driver\objchk\i386'
+SrchSetFlags=0x0419600a
+FileSortMode=0x0
+StateWindowFrame=19,13,1237,907,0x63097fca
+_StateWindow=22,29,859,524,0x00100008,'C:\work\SerialClone\app\objchk\i386\SerialCloneApp.map',240,15,244,4,20,0,46,26,126,176,8,4294967295,4294967295,1,10,'',12,255,48,0,10,499,0,0,753,252,249,8422,40,400,0,244,246,242,252,753,753,752,761,253,0,0,253,224,252,8420,1,208
+_StateWindow=134,168,859,524,0x00100028,'C:\work\SerialClone\driver\SERIALCLONE.INF',240,15,244,4,20,0,46,26,126,176,8,0,725,0,10,'',12,255,48,0,10,499,0,0,753,252,249,54,1,400,0,244,246,242,252,753,753,752,761,253,0,0,253,224,252,54,1,208
+_StateBuffer='C:\work\SerialClone\app\objchk\i386\SerialCloneApp.map',0x0400048e,8422,40,25,'5 9','',0x0,'',1,72
+_StateBuffer='C:\work\SerialClone\driver\SERIALCLONE.INF',0x0400048e,54,1,25,'5 9','',0x0,'',1,72
+_StateHistory=FILELIST,'C:\WORK\SERIALCLONE\APP\makefile','C:\WORK\SERIALCLONE\APP\sources','C:\work\serialclone\coinst\SerialCloneCoInst.cpp','C:\work\test6\driver\test6.inf','C:\work\test7\driver\test7.cat','C:\WINDDK\2600.1106\tools\chkinf\SerialClone','C:\work\SerialClone\SerialClone.inf','C:\work\SerialClone\driver\SERIALCLONE.INF','C:\work\SerialClone\driver\objchk\i386\SerialClone.inf'
+_StateHistory=SEARCH,'test6','TEST6','RTC_S','RTC'
+_StateHistory=REPLACE,'SerialClone','SERIALCLONE'
+_StateHistory=XSYMBOL,'SerialCloneCoInstaller'
+_StateHistory=EDITFILE,'C:\work\SerialClone\SerialClone.inf','C:\work\SerialClone\driver\SERIALCLONE.INF','C:\work\SerialClone\driver\objchk\i386\SerialClone.inf'
+
+[Editor]
+ClipboardSetTermStr='\r\n',0
+ClipboardEnableTermStr=1
+ClipboardSetSepStr='\r\n',0
+ClipboardEnableSepStr=1
+ScrapSetCount=1
+
+[Compiler]
+TagSetFile=''
+BrowseSetFile=''
+CompilerNewExt=.htm
+CompilerNewExt=.000
+CompilerNewExt=.pas
+CompilerNewExt=.ini
+CompilerNewExt=.html
+CompilerAssign='Default Compiler Settings','.*'
+CompilerNewExt=.txt
+TagSetCmd='${HOME}${WTAGS} -oc -d -t${TAGFILE}.tag -p${TAGFILE}.ptg',0x8000060
+CompilerAddCmd='Default Compiler Settings','',1073741840,'',16,'',16,'',16,'',0,'',0,'','','','',''
+CompilerAddResponse='Default Compiler Settings',

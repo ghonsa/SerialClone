@@ -1,0 +1,74 @@
+SERIALCLONE (IRQL 00):     FilterCreateDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterPowerDispatch++. IRP 89147008
+SERIALCLONE (IRQL 00):     FilterPowerDispatch--. IRP 89147008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterCreateDispatch--. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch--. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch--. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch--. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch--. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch--. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch--. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch--. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch--. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch--. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch--. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch--. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch--. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch--. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch--. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch--. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterDeviceIoControlDispatch--. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterReadDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterReadDispatch--. IRP 8911A008 STATUS 103
+SERIALCLONE (IRQL 02):     ReadComplete++. IRP 8911A008 
+SERIALCLONE (IRQL 02):     Buffer:: $GPRMC,131922,V,,,,,,,280905,,
+SERIALCLONE (IRQL 02):     ReadComplete++. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterReadDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterReadDispatch--. IRP 8911A008 STATUS 103
+SERIALCLONE (IRQL 02):     ReadComplete++. IRP 8911A008 
+SERIALCLONE (IRQL 02):     Buffer:: ,00,,,M,,M,,*6A
+$GPGSA,A,1,,,
+SERIALCLONE (IRQL 02):     ReadComplete++. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterReadDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterReadDispatch--. IRP 8911A008 STATUS 103
+SERIALCLONE (IRQL 02):     ReadComplete++. IRP 8911A008 
+SERIALCLONE (IRQL 02):     Buffer:: 01,38,295,30,05,39,069,00,09,1
+SERIALCLONE (IRQL 02):     ReadComplete++. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterReadDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterReadDispatch--. IRP 8911A008 STATUS 103
+SERIALCLONE (IRQL 02):     ReadComplete++. IRP 8911A008 
+SERIALCLONE (IRQL 02):     Buffer:: ,10,14,68,335,00,15,00,189,00,
+SERIALCLONE (IRQL 02):     ReadComplete++. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterReadDispatch++. IRP 8911A008
+SERIALCLONE (IRQL 00):     FilterReadDispatch--. IRP 8911A008 STATUS 103
+SERIALCLONE (IRQL 02):     ReadComplete++. IRP 8911A008 
+SERIALCLONE (IRQL 02):     Buffer:: ,10,25,33,240,00,30,46,119,46,
+SERIALCLONE (IRQL 02):     ReadComplete++. IRP 8911A008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterReadDispatch++. IRP 8910F008
+SERIALCLONE (IRQL 00):     FilterReadDispatch--. IRP 8910F008 STATUS 103
+SERIALCLONE (IRQL 01):     ReadComplete++. IRP 8910F008 
+SERIALCLONE (IRQL 01):     Buffer:: ,119,46,,,,,,,,*73
+$PGRME,,M,_
+SERIALCLONE (IRQL 01):     ReadComplete++. IRP 8910F008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterCleanupDispatch++. IRP 8910F008
+SERIALCLONE (IRQL 00):     FilterCleanupDispatch--. IRP 8910F008 STATUS 0
+SERIALCLONE (IRQL 00):     FilterCloseDispatch++. IRP 8910F008
+SERIALCLONE (IRQL 00):     FilterPowerDispatch++. IRP 8910A008
+SERIALCLONE (IRQL 00):     FilterPowerDispatch--. IRP 8910A008 STATUS 103
+SERIALCLONE (IRQL 00):     FilterCloseDispatch--. IRP 8910F008 STATUS 0

@@ -1,0 +1,124 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SerialCloneDll - Win32 Checked--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"objchk\i386/SerialCloneDll.res" /d "_DEBUG" "C:\work\SerialClone\Install\SerialCloneDll.rc"" 
+Creating temporary file "C:\DOCUME~1\HP_Owner\LOCALS~1\Temp\RSP35.tmp" with contents
+[
+/nologo /Gz /MTd /W3 /Gm /GX /Zi /Od /I "C:\WINDDK\2600~1.110\inc\wxp" /I "C:\WINDDK\2600~1.110\inc\crt" /I "C:\WINDDK\2600~1.110\inc\crt\atl30" /D "_UNICODE" /D "UNICODE" /D _X86_=1 /D i386=1 /D "STD_CALL" /D CONDITION_HANDLING=1 /D NT_INST=0 /D WIN32=100 /D _NT1X_=100 /D WINNT=1 /D WIN32_LEAN_AND_MEAN=1 /D DEVL=1 /D FPO=0 /D "NDEBUG" /D DBG=1 /D "DEPRECATE_DDK_FUNCTIONS" /D _WIN32_WINNT=0x0501 /D WINVER=0x0501 /D _WIN32_IE=0x0603 /D NTDDI_VERSION=0x05010000 /FR"objchk\i386/" /Fp"objchk\i386/SerialCloneDll.pch" /YX /Fo"objchk\i386/" /Fd"objchk\i386/SerialCloneDll.pdb" /FD /c 
+"C:\work\SerialClone\Install\SerialCloneDll.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\HP_Owner\LOCALS~1\Temp\RSP35.tmp" 
+Creating temporary file "C:\DOCUME~1\HP_Owner\LOCALS~1\Temp\RSP36.tmp" with contents
+[
+setupapi.lib kernel32.lib user32.lib libcmtd.lib advapi32.lib comctl32.lib ole32.lib oleaut32.lib uuid.lib ntdll.lib /nologo /dll /incremental:yes /pdb:"objchk\i386/SerialCloneDll.pdb" /map:"SerialClone.map.map" /machine:I386 /nodefaultlib /def:"SerialCloneDll.def" /out:"objchk\i386/SerialCloneDll.dll" /implib:"objchk\i386/SerialCloneDll.lib" /libpath:"C:\WINDDK\2600~1.110\lib\wxp\i386" /libpath:"C:\WINDDK\2600~1.110\lib\wxp\i386" /ignore:4010,4037,4039,4065,4070,4078,4087,4089,4221,4210 
+.\objchk\i386\SerialCloneDll.obj
+.\objchk\i386\SerialCloneDll.res
+]
+Creating command line "link.exe @C:\DOCUME~1\HP_Owner\LOCALS~1\Temp\RSP36.tmp"
+<h3>Output Window</h3>
+Compiling resources with DDK resource compiler...
+Compiling with DDK compiler...
+SerialCloneDll.cpp
+C:\work\SerialClone\install\SerialCloneDll.cpp(55) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(55) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(77) : error C2664: 'wsprintfW' : cannot convert parameter 2 from 'char [18]' to 'LPCWSTR'
+        Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+        C:\WINDDK\2600.1106\inc\crt\winuser.h(236): could be 'int wsprintfW(LPWSTR,LPCWSTR,...)'
+        while trying to match the argument list '(TCHAR [30], char [18], DWORD)'
+C:\work\SerialClone\install\SerialCloneDll.cpp(85) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(85) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(103) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(103) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(106) : error C2065: 'MyOpenInfFile' : undeclared identifier
+C:\work\SerialClone\install\SerialCloneDll.cpp(106) : error C2440: '=' : cannot convert from ''unknown-type'' to 'HINF'
+C:\work\SerialClone\install\SerialCloneDll.cpp(116) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(116) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(124) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(124) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(128) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(128) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(131) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(131) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(134) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(134) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(137) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(137) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(140) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(140) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(143) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(143) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(146) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(146) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(149) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(149) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(152) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(152) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(155) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(155) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(158) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(158) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(161) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(161) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(164) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(164) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(167) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(167) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(170) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(170) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(173) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(173) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(176) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(176) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(179) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(179) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(182) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(182) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(185) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(185) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(188) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(188) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(191) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(191) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(194) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(194) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(197) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(197) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(200) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(200) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(203) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(203) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(206) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(206) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(209) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(209) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(212) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(212) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(215) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(215) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(218) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(218) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(221) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(221) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(224) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(224) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(227) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(227) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(230) : error C2308: concatenating mismatched wide strings
+C:\work\SerialClone\install\SerialCloneDll.cpp(230) : error C2308: concatenating mismatched wide strings
+Error executing cl.exe.
+Creating command line "bscmake.exe /nologo /o"objchk\i386/SerialCloneDll.bsc"  .\objchk\i386\SerialCloneDll.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SerialCloneDll.dll - 83 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
